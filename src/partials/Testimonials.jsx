@@ -32,30 +32,48 @@ function Testimonials() {
           {/* Items */}
           <div className="max-w-sm md:max-w-4xl mx-auto grid gap-4 grid-cols-4 md:grid-cols-5">
 
+          <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
+            <i className="fab fa-html5 text-5xl text-gray-600 hover:text-orange-500 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
+          </div>
           
           <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
-              <i className="fab fa-linux text-5xl text-gray-600 hover:text-black transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
-            </div>
-            
-          
+            <i className="fab fa-css3-alt text-5xl text-gray-600 hover:text-blue-500 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
+          </div>
+
+          <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
+              <i className="fab fa-js-square text-5xl text-gray-600 hover:text-yellow-500 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
+          </div>
+              
           <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
             <i className="fab fa-react text-5xl text-gray-600 hover:text-blue-600 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
+          </div>
+
+          <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
+            <i className="fab fa-node text-5xl text-gray-600 hover:text-green-600 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
           </div>
             
           
           <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
             <i className="fab fa-git-square text-5xl text-gray-600 hover:text-red-600 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
           </div>
-            
-          
-          <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
-              <i className="fab fa-js-square text-5xl text-gray-600 hover:text-yellow-500 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
-            </div>
-            
           
           <div className="flex items-center justify-center py-4 col-span-2 md:col-auto col-start-2 col-end-4">
             <i className="fab fa-docker text-5xl text-gray-600 hover:text-orange-600 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
           </div>
+          
+          <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
+            <i className="fas fa-shield-alt text-5xl text-gray-600 hover:text-indigo-600 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
+          </div>
+          
+          <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
+            <i className="fab fa-python text-5xl text-gray-600 hover:text-blue-400 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
+          </div>
+
+          <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
+              <i className="fab fa-linux text-5xl text-gray-600 hover:text-black transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
+          </div>
+          
+
             
           </div>
 
