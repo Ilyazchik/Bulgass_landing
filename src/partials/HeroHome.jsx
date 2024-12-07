@@ -1,8 +1,6 @@
-import { useState } from 'https://cdn.skypack.dev/react';
 import heroImage from '../assets/hero-image.png';
 function HeroHome() {
 
-  const [videoModalOpen, setVideoModalOpen] = useState(false);
 
   return (
     <section className="relative">

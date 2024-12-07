@@ -1,4 +1,4 @@
-import React from 'https://cdn.skypack.dev/react';
+
 
 function FeaturesBlocks() {
   return (

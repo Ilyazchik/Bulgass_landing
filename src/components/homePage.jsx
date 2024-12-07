@@ -1,4 +1,3 @@
-import React from 'https://cdn.skypack.dev/react'; 
 
 import Header from '../partials/Header';
 import HeroHome from '../partials/HeroHome';

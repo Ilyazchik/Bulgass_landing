@@ -1,6 +1,4 @@
-import React from 'https://cdn.skypack.dev/react';
 import { Link } from 'https://cdn.skypack.dev/react-router-dom@5.3.0';
-import bulgass from '../assets/bulgass_black.png';
 
 
 function Footer() {
