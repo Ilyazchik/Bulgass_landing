@@ -36,7 +36,7 @@ function Footer() {
 
         {/* Copyrights note */}
         <div className="text-sm text-gray-600">
-          Made in China <a className="text-blue-600 hover:underline" href="/">Bulgass</a>. All rights reserved.
+          Made in <a className="text-blue-600 hover:underline" href="/">Bulgass</a>. All rights reserved.
         </div>
       </div>
     </footer>

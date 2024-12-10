@@ -72,9 +72,29 @@ function Testimonials() {
           <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
               <i className="fab fa-linux text-5xl text-gray-600 hover:text-black transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
           </div>
-          
 
+          <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
+            <i className="fab fa-cuttlefish text-5xl text-gray-600 hover:text-blue-600 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
+          </div>
+
+          <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
+             <i className="fab fa-php text-5xl text-gray-600 hover:text-blue-500 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
+           </div>
             
+           <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
+             <i className="fab fa-bootstrap text-5xl text-gray-600 hover:text-purple-600 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
+           </div>
+            
+           <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
+             <i className="fab fa-node-js text-5xl text-gray-600 hover:text-green-500 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
+           </div>
+           <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
+             <i className="fab fa-laravel text-5xl text-gray-600 hover:text-green-500 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
+           </div>
+            
+
+
+
           </div>
 
 
