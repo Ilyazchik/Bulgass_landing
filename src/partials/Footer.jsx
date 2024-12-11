@@ -21,7 +21,7 @@ function Footer() {
 
           <li className="ml-4">
             <a 
-              href="https://wa.me/996508522960" 
+              href="https://wa.me/996508522911" 
               className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" 
               aria-label="WhatsApp"
               target="_blank"
