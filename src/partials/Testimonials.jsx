@@ -1,11 +1,37 @@
+import React from 'https://cdn.skypack.dev/react';
 import bulgassIcon from '../assets/bulgass.png';
 
+const { useState } = React;
+
+
+const icons = [
+  { id: 1, name: 'HTML5', className: 'fab fa-html5', color: 'text-orange-500', description: 'HTML5 позволяет вам создавать современный, семантический и кроссплатформенный контент.' },
+  { id: 2, name: 'CSS3', className: 'fab fa-css3-alt', color: 'text-blue-500', description: 'CSS3 предоставляет мощные инструменты для создания привлекательных пользовательских интерфейсов.' },
+  { id: 3, name: 'JavaScript', className: 'fab fa-js-square', color: 'text-yellow-500', description: 'JavaScript - ключевой язык для создания интерактивных и динамичных веб-страниц.' },
+  { id: 4, name: 'React', className: 'fab fa-react', color: 'text-blue-600', description: 'React - это мощный инструмент для построения отзывчивых и масштабируемых интерфейсов.' },
+  { id: 5, name: 'Node.js', className: 'fab fa-node', color: 'text-green-600', description: 'Node.js позволяет разрабатывать серверные приложения с использованием JavaScript.' },
+  { id: 6, name: 'Git', className: 'fab fa-git-square', color: 'text-red-600', description: 'Git - это незаменимый инструмент для управления версиями в командной разработке.' },
+  { id: 7, name: 'Docker', className: 'fab fa-docker', color: 'text-orange-600', description: 'Docker помогает создавать контейнеризированные приложения, упрощая развертывание и масштабирование.' },
+  { id: 8, name: 'Cybersecurity', className: 'fas fa-shield-alt', color: 'text-indigo-600', description: 'Основы кибербезопасности помогут вам защитить свои приложения и данные.' },
+  { id: 9, name: 'Python', className: 'fab fa-python', color: 'text-blue-400', description: 'Python - универсальный язык, идеальный для анализа данных, разработки и автоматизации.' },
+  { id: 10, name: 'Linux', className: 'fab fa-linux', color: 'text-black', description: 'Linux - это основа для серверов, облаков и встроенных систем.' },
+  { id: 11, name: 'C++', className: 'fab fa-cuttlefish', color: 'text-blue-600', description: 'C++ используется для создания высокопроизводительных приложений.' },
+  { id: 12, name: 'PHP', className: 'fab fa-php', color: 'text-blue-500', description: 'PHP - один из популярнейших языков для разработки серверной логики веб-сайтов.' },
+  { id: 13, name: 'BOOTSTRAP', className: 'fab fa-bootstrap', color: 'text-purple-600', description: 'Bootstrap ускоряет создание адаптивных веб-дизайнов.' },
+  { id: 14, name: 'NODEJS', className: 'fab fa-node-js', color: 'text-green-500', description: 'Node.js позволяет создавать высоконагруженные серверные приложения.' },
+  { id: 15, name: 'LARAVEL', className: 'fab fa-laravel', color: 'text-green-500', description: 'Laravel - это мощный PHP-фреймворк для разработки современных приложений.' },
+];
+
 function Testimonials() {
+  const [activeModal, setActiveModal] = useState(null);
+
+  const openModal = (id) => setActiveModal(id);
+  const closeModal = () => setActiveModal(null);
+
   return (
     <section className="relative">
-
-      {/* Illustration behind content */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -mb-32" aria-hidden="true">
+            {/* Illustration behind content */}
+            <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -mb-32" aria-hidden="true">
         <svg width="1760" height="518" viewBox="0 0 1760 518" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="illustration-02">
@@ -23,100 +49,65 @@ function Testimonials() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="py-12 md:py-20">
-
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h2 className="h2 mb-4">We will teach you:</h2>
           </div>
 
-          {/* Items */}
-          <div className="max-w-sm md:max-w-4xl mx-auto grid gap-4 grid-cols-4 md:grid-cols-5">
-
-          <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
-            <i className="fab fa-html5 text-5xl text-gray-600 hover:text-orange-500 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
-          </div>
-          
-          <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
-            <i className="fab fa-css3-alt text-5xl text-gray-600 hover:text-blue-500 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
-          </div>
-
-          <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
-              <i className="fab fa-js-square text-5xl text-gray-600 hover:text-yellow-500 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
-          </div>
-              
-          <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
-            <i className="fab fa-react text-5xl text-gray-600 hover:text-blue-600 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
+          {/* Icons */}
+          <div className="max-w-sm md:max-w-4xl mx-auto grid gap-4 grid-cols-3 md:grid-cols-5">
+            {icons.map((icon) => (
+              <div
+                key={icon.id}
+                className="flex items-center justify-center py-4 cursor-pointer"
+                onClick={() => openModal(icon.id)}
+              >
+                <i
+                  className={`${icon.className} text-5xl text-gray-600 hover:${icon.color} transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4`}
+                ></i>
+              </div>
+            ))}
           </div>
 
-          <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
-            <i className="fab fa-node text-5xl text-gray-600 hover:text-green-600 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
-          </div>
-            
-          
-          <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
-            <i className="fab fa-git-square text-5xl text-gray-600 hover:text-red-600 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
-          </div>
-          
-          <div className="flex items-center justify-center py-4 col-span-2 md:col-auto col-start-2 col-end-4">
-            <i className="fab fa-docker text-5xl text-gray-600 hover:text-orange-600 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
-          </div>
-          
-          <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
-            <i className="fas fa-shield-alt text-5xl text-gray-600 hover:text-indigo-600 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
-          </div>
-          
-          <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
-            <i className="fab fa-python text-5xl text-gray-600 hover:text-blue-400 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
-          </div>
-
-          <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
-              <i className="fab fa-linux text-5xl text-gray-600 hover:text-black transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
-          </div>
-
-          <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
-            <i className="fab fa-cuttlefish text-5xl text-gray-600 hover:text-blue-600 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
-          </div>
-
-          <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
-             <i className="fab fa-php text-5xl text-gray-600 hover:text-blue-500 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
-           </div>
-            
-           <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
-             <i className="fab fa-bootstrap text-5xl text-gray-600 hover:text-purple-600 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
-           </div>
-            
-           <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
-             <i className="fab fa-node-js text-5xl text-gray-600 hover:text-green-500 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
-           </div>
-           <div className="flex items-center justify-center py-4 col-span-2 md:col-auto">
-             <i className="fab fa-laravel text-5xl text-gray-600 hover:text-green-500 transition duration-300 ease-in-out transform hover:scale-110 hover:shadow-lg rounded-full p-4"></i>
-           </div>
-            
-
-
-
-          </div>
-
-
+          {/* Modal */}
+          {icons.map((icon) => (
+            activeModal === icon.id && (
+              <div
+                key={icon.id}
+                className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50"
+                onClick={closeModal}
+              >
+                <div
+                  className="bg-white p-6 rounded shadow-lg w-96 text-center"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <h3 className="text-xl font-bold mb-4">{icon.name}</h3>
+                  <p className="text-gray-600 mb-6">{icon.description}</p>
+                  <button
+                    className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                    onClick={closeModal}
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            )
+          ))}
           {/* Testimonials */}
           <div className="max-w-3xl mx-auto mt-20" data-aos="zoom-y-out">
             <div className="relative flex items-start border-2 border-gray-200 rounded bg-white">
-
               {/* Testimonial */}
               <div className="text-center px-12 py-8 pt-20 mx-4 md:mx-0">
                 <div className="absolute top-0 -mt-8 left-1/2 transform -translate-x-1/2">
-
-                  <img className="relative rounded-full" src={bulgassIcon} width="96" height="96" alt="Testimonial 01" />
+                  <img className="relative rounded-full" src={bulgassIcon} width="96" height="96" alt="Testimonial" />
                 </div>
                 <blockquote className="text-xl font-medium mb-4">
-                  “ We are a team of professionals ready to help you explore the world of IT and master the in-demand skills that will transform your career. Our courses are not just theory, but a practical immersion in real projects that you can apply in your work. We teach relevant technologies such as programming, system administration, web development, full-stack development, and an introduction to cybersecurity, so you can quickly adapt to changes in the IT industry. “
+                  “ We are a team of professionals ready to help you explore the world of IT and master the in-demand skills that will transform your career. Our courses are not just theory, but a practical immersion in real projects that you can apply in your work. ”
                 </blockquote>
                 <cite className="block font-bold text-lg not-italic mb-1">Bulgass IT Academy</cite>
               </div>
-
             </div>
           </div>
-
         </div>
       </div>
     </section>
