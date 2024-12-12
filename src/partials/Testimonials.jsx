@@ -1,7 +1,6 @@
-import React from 'https://cdn.skypack.dev/react';
+import {useState} from 'react';
 import bulgassIcon from '../assets/bulgass.png';
 
-const { useState } = React;
 
 
 const icons = [
@@ -17,16 +16,16 @@ const icons = [
   { id: 10, name: 'Linux', className: 'fab fa-linux', color: 'text-black', description: 'Linux - это основа для серверов, облаков и встроенных систем.' },
   { id: 11, name: 'C++', className: 'fab fa-cuttlefish', color: 'text-blue-600', description: 'C++ используется для создания высокопроизводительных приложений.' },
   { id: 12, name: 'PHP', className: 'fab fa-php', color: 'text-blue-500', description: 'PHP - один из популярнейших языков для разработки серверной логики веб-сайтов.' },
-  { id: 13, name: 'BOOTSTRAP', className: 'fab fa-bootstrap', color: 'text-purple-600', description: 'Bootstrap ускоряет создание адаптивных веб-дизайнов.' },
-  { id: 14, name: 'NODEJS', className: 'fab fa-node-js', color: 'text-green-500', description: 'Node.js позволяет создавать высоконагруженные серверные приложения.' },
-  { id: 15, name: 'LARAVEL', className: 'fab fa-laravel', color: 'text-green-500', description: 'Laravel - это мощный PHP-фреймворк для разработки современных приложений.' },
+  { id: 13, name: 'Bootstrap', className: 'fab fa-bootstrap', color: 'text-purple-600', description: 'Bootstrap ускоряет создание адаптивных веб-дизайнов.' },
+  { id: 14, name: 'Laravel', className: 'fab fa-laravel', color: 'text-green-500', description: 'Laravel - это мощный PHP-фреймворк для разработки современных приложений.' },
+  { id: 15, name: 'VSCode', className: 'fas fa-code', color: 'text-blue-500', description: 'Visual Studio Code - это популярный редактор кода с мощными расширениями для веб-разработки.' },
 ];
 
 function Testimonials() {
-  const [activeModal, setActiveModal] = useState(null);
+  const [activeModal, setActiveModal] = useState(false);
 
   const openModal = (id) => setActiveModal(id);
-  const closeModal = () => setActiveModal(null);
+  const closeModal = () => setActiveModal(false);
 
   return (
     <section className="relative">

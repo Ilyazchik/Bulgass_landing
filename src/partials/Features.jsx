@@ -1,4 +1,4 @@
-import { useState, useRef, useEffect } from 'https://cdn.skypack.dev/react';
+import { useState, useRef, useEffect } from 'react';
 
 import Transition from '../utils/Transition';
 import features from '../assets/featuresBg.png';
@@ -9,45 +9,43 @@ function Features() {
 
   const [tab, setTab] = useState(1);
 
-  const tabs = useRef(null);
+  const tabs = useRef(false);
 
-  const heightFix = () => {
-    if (tabs.current.children[tab]) {
-      tabs.current.style.height = tabs.current.children[tab - 1].offsetHeight + 'px'
-    }
-  }
-
+  
   useEffect(() => {
+    const heightFix = () => {
+      if (tabs.current.children[tab]) {
+        tabs.current.style.height = tabs.current.children[tab - 1].offsetHeight + 'px'
+      }
+    }
     heightFix()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [tab])
+    
+  })
 
   return (
     <section className="relative">
 
-      {/* Section background (needs .relative class on parent and next sibling elements) */}
+
       <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div>
       <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-12 md:pt-20">
 
-          {/* Section header */}
+
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h2 mb-4">Explore new opportunities</h1>
             <p className="text-xl text-gray-600">IT is a world where your ideas turn into technologies that shape the future. Join us and create something that will not only change your life but the lives of millions.</p>
           </div>
 
-          {/* Section content */}
           <div className="md:grid md:grid-cols-12 md:gap-6">
 
-            {/* Content */}
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
                 <h3 className="h3 mb-3">Powerful suite of tools</h3>
                 <p className="text-xl text-gray-600">With us, you will learn to work with: Docker containerization and with Kubernetes, cloud storage with AWS, version control systems like GIT, and many other essential tools.</p>
               </div>
-              {/* Tabs buttons */}
+
               <div className="mb-8 md:mb-0">
                 <a
                   className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
