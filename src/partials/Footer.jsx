@@ -10,7 +10,7 @@ function Footer() {
           <li className="ml-4">
             <a 
               href="https://www.instagram.com/bulgass.it"
-              className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" 
+              className="flex justify-center items-center p-3 text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" 
               aria-label="Instagram"
               target="_blank"
               rel="noopener noreferrer"
@@ -22,7 +22,7 @@ function Footer() {
           <li className="ml-4">
             <a 
               href="https://wa.me/996508522911" 
-              className="flex justify-center items-center text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" 
+              className="flex justify-center items-center p-3 text-gray-600 hover:text-gray-900 bg-white hover:bg-white-100 rounded-full shadow transition duration-150 ease-in-out" 
               aria-label="WhatsApp"
               target="_blank"
               rel="noopener noreferrer"

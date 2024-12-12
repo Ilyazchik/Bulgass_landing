@@ -4,22 +4,26 @@ import bulgassIcon from '../assets/bulgass.png';
 
 
 const icons = [
-  { id: 1, name: 'HTML5', className: 'fab fa-html5', color: 'text-orange-500', description: 'HTML5 позволяет вам создавать современный, семантический и кроссплатформенный контент.' },
-  { id: 2, name: 'CSS3', className: 'fab fa-css3-alt', color: 'text-blue-500', description: 'CSS3 предоставляет мощные инструменты для создания привлекательных пользовательских интерфейсов.' },
-  { id: 3, name: 'JavaScript', className: 'fab fa-js-square', color: 'text-yellow-500', description: 'JavaScript - ключевой язык для создания интерактивных и динамичных веб-страниц.' },
-  { id: 4, name: 'React', className: 'fab fa-react', color: 'text-blue-600', description: 'React - это мощный инструмент для построения отзывчивых и масштабируемых интерфейсов.' },
-  { id: 5, name: 'Node.js', className: 'fab fa-node', color: 'text-green-600', description: 'Node.js позволяет разрабатывать серверные приложения с использованием JavaScript.' },
-  { id: 6, name: 'Git', className: 'fab fa-git-square', color: 'text-red-600', description: 'Git - это незаменимый инструмент для управления версиями в командной разработке.' },
-  { id: 7, name: 'Docker', className: 'fab fa-docker', color: 'text-orange-600', description: 'Docker помогает создавать контейнеризированные приложения, упрощая развертывание и масштабирование.' },
-  { id: 8, name: 'Cybersecurity', className: 'fas fa-shield-alt', color: 'text-indigo-600', description: 'Основы кибербезопасности помогут вам защитить свои приложения и данные.' },
-  { id: 9, name: 'Python', className: 'fab fa-python', color: 'text-blue-400', description: 'Python - универсальный язык, идеальный для анализа данных, разработки и автоматизации.' },
-  { id: 10, name: 'Linux', className: 'fab fa-linux', color: 'text-black', description: 'Linux - это основа для серверов, облаков и встроенных систем.' },
-  { id: 11, name: 'C++', className: 'fab fa-cuttlefish', color: 'text-blue-600', description: 'C++ используется для создания высокопроизводительных приложений.' },
-  { id: 12, name: 'PHP', className: 'fab fa-php', color: 'text-blue-500', description: 'PHP - один из популярнейших языков для разработки серверной логики веб-сайтов.' },
-  { id: 13, name: 'Bootstrap', className: 'fab fa-bootstrap', color: 'text-purple-600', description: 'Bootstrap ускоряет создание адаптивных веб-дизайнов.' },
-  { id: 14, name: 'Laravel', className: 'fab fa-laravel', color: 'text-green-500', description: 'Laravel - это мощный PHP-фреймворк для разработки современных приложений.' },
-  { id: 15, name: 'VSCode', className: 'fas fa-code', color: 'text-blue-500', description: 'Visual Studio Code - это популярный редактор кода с мощными расширениями для веб-разработки.' },
+  { id: 1, name: 'HTML5', className: 'fab fa-html5', color: 'text-orange-500', description: 'HTML5 allows you to create modern, semantic, and cross-platform content.' },
+  { id: 2, name: 'CSS3', className: 'fab fa-css3-alt', color: 'text-blue-500', description: 'CSS3 provides powerful tools for creating attractive user interfaces.' },
+  { id: 3, name: 'JavaScript', className: 'fab fa-js-square', color: 'text-yellow-500', description: 'JavaScript is the key language for creating interactive and dynamic web pages.' },
+  { id: 4, name: 'React', className: 'fab fa-react', color: 'text-blue-600', description: 'React is a powerful tool for building responsive and scalable user interfaces.' },
+  { id: 5, name: 'Node.js', className: 'fab fa-node', color: 'text-green-600', description: 'Node.js allows you to develop server applications using JavaScript.' },
+  { id: 6, name: 'Git', className: 'fab fa-git-square', color: 'text-red-600', description: 'Git is an indispensable tool for version control in team development.' },
+  { id: 7, name: 'Docker', className: 'fab fa-docker', color: 'text-orange-600', description: 'Docker helps create containerized applications, simplifying deployment and scaling.' },
+  { id: 8, name: 'Cybersecurity', className: 'fas fa-shield-alt', color: 'text-indigo-600', description: 'Cybersecurity basics will help you protect your applications and data.' },
+  { id: 9, name: 'Python', className: 'fab fa-python', color: 'text-green-600', description: 'Python is a versatile language, ideal for data analysis, development, and automation.' },
+  { id: 10, name: 'Linux', className: 'fab fa-linux', color: 'text-black', description: 'Linux is the foundation for servers, clouds, and embedded systems.' },
+  { id: 11, name: 'C++', className: 'fab fa-cuttlefish', color: 'text-blue-600', description: 'C++ is used to create high-performance applications.' },
+  { id: 12, name: 'PHP', className: 'fab fa-php', color: 'text-blue-500', description: 'PHP is one of the most popular languages for developing server-side logic of websites.' },
+  { id: 13, name: 'Bootstrap', className: 'fab fa-bootstrap', color: 'text-purple-600', description: 'Bootstrap speeds up the creation of responsive web designs.' },
+  { id: 14, name: 'Laravel', className: 'fab fa-laravel', color: 'text-green-500', description: 'Laravel is a powerful PHP framework for developing modern applications.' },
+  { id: 15, name: 'VSCode', className: 'fas fa-code', color: 'text-blue-500', description: 'Visual Studio Code is a popular code editor with powerful extensions for web development.' },
+  { id: 16, name: 'AWS', className: 'fab fa-aws', color: 'text-blue-500', description: 'Amazon Web Services (AWS) is the world’s most widely used cloud, offering over 200 fully featured services for data centers worldwide.' },
+  { id: 17, name: 'DBMS', className: 'fas fa-database', color: 'text-black', description: 'Databases based on relational model of data.' },
+  { id: 18, name: 'D&A', className: 'fas fa-chart-diagram', color: 'text-black', description: 'Databases based on relational model of data.' },
 ];
+
 
 function Testimonials() {
   const [activeModal, setActiveModal] = useState(false);
