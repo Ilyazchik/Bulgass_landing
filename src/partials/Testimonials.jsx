@@ -14,14 +14,16 @@ const icons = [
   { id: 8, name: 'Cybersecurity', className: 'fas fa-shield-alt', color: 'text-indigo-600', description: 'Cybersecurity basics will help you protect your applications and data.' },
   { id: 9, name: 'Python', className: 'fab fa-python', color: 'text-green-600', description: 'Python is a versatile language, ideal for data analysis, development, and automation.' },
   { id: 10, name: 'Linux', className: 'fab fa-linux', color: 'text-black', description: 'Linux is the foundation for servers, clouds, and embedded systems.' },
-  { id: 11, name: 'C++', className: 'fab fa-cuttlefish', color: 'text-blue-600', description: 'C++ is used to create high-performance applications.' },
+  { id: 11, name: 'C++', className: 'devicon-cplusplus-plain ', color: 'text-blue-600', description: 'C++ is used to create high-performance applications.' },
   { id: 12, name: 'PHP', className: 'fab fa-php', color: 'text-blue-500', description: 'PHP is one of the most popular languages for developing server-side logic of websites.' },
   { id: 13, name: 'Bootstrap', className: 'fab fa-bootstrap', color: 'text-purple-600', description: 'Bootstrap speeds up the creation of responsive web designs.' },
   { id: 14, name: 'Laravel', className: 'fab fa-laravel', color: 'text-green-500', description: 'Laravel is a powerful PHP framework for developing modern applications.' },
-  { id: 15, name: 'VSCode', className: 'fas fa-code', color: 'text-blue-500', description: 'Visual Studio Code is a popular code editor with powerful extensions for web development.' },
-  { id: 16, name: 'AWS', className: 'fab fa-aws', color: 'text-blue-500', description: 'Amazon Web Services (AWS) is the world’s most widely used cloud, offering over 200 fully featured services for data centers worldwide.' },
+  { id: 15, name: 'VSCode', className: 'devicon-vscode-plain', color: 'text-blue-500', description: 'Visual Studio Code is a popular code editor with powerful extensions for web development.' },
+  { id: 16, name: 'AWS', className: 'fab fa-aws', color: 'text-orange-500', description: 'Amazon Web Services (AWS) is the world’s most widely used cloud, offering over 200 fully featured services for data centers worldwide.' },
   { id: 17, name: 'DBMS', className: 'fas fa-database', color: 'text-black', description: 'Databases based on relational model of data.' },
-  { id: 18, name: 'D&A', className: 'fas fa-chart-diagram', color: 'text-black', description: 'Databases based on relational model of data.' },
+  { id: 18, name: 'D&A', className: 'fas fa-sitemap', color: 'text-green-900', description: 'Data Structures is about how data can be stored in different structures. Algorithms is about how to solve different problems, often by searching through and manipulating data structures.' },
+  { id: 19, name: 'Terraform', className: 'devicon-terraform-plain', color: 'text-purple-600', description: 'Terraform is an IAC tool, used primarily by DevOps teams to automate various infrastructure tasks.' },
+  { id: 20, name: 'Kubernetes', className: 'devicon-kubernetes-plain', color: 'text-blue-600', description: 'Kubernetes is a portable, extensible, open source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation.' },
 ];
 
 
