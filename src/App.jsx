@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 
-import AOS from 'https://cdn.skypack.dev/aos';
-import { focusHandling } from 'https://cdn.skypack.dev/cruip-js-toolkit';
+import AOS from 'aos';
+import { focusHandling } from 'cruip-js-toolkit';
 
 import Home from './components/homePage';
 

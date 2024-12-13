@@ -1,5 +1,5 @@
-import React, { useState } from 'https://cdn.skypack.dev/react';
-import PropTypes from 'https://cdn.skypack.dev/prop-types';
+import { useState } from 'react';
+import PropTypes from 'prop-types';
 import Transition from './Transition';
 
 function Dropdown({
