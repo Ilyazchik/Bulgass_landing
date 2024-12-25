@@ -1,0 +1,56 @@
+
+
+const translations = {
+    en: {
+      title: 'In our courses, you will receive personalized training in cutting-edge areas of the IT industry',
+      features: 'Explore new opportunities',
+      features1: 'IT is a world where your ideas turn into technologies that shape the future. Join us and create something that will not only change your life but the lives of millions.',
+      features2: 'Powerful suite of tools',
+      features3: 'With us, you will learn to work with: Docker containerization and with Kubernetes, cloud storage with AWS, version control systems like GIT, and many other essential tools.',
+      features4: 'Protection against cyberattacks',
+      features5: 'Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. These cyberattacks are usually aimed at accessing, changing, or destroying sensitive information.',
+      features6: 'Creation of standalone websites',
+      features7: 'Create your full-scale project in React.',
+      features8: 'Building the Simple ecosystem',
+      features9: 'Take collaboration to the next level with security and administrative features built for teams.',
+      fblocks: 'How Simple works',
+      fblocks1: 'Simple streamlines your process by offering easy-to-use tools and features designed to enhance collaboration, productivity, and efficiency.',
+      fblocks2: 'Initial Contact',
+      fblocks3: 'Discovery Session',
+      fblocks4: 'Contracting',
+      fblocks5: 'Fast Prototyping',
+      fblocks6: 'Design Phase',
+      fblocks7: 'Develop & Launch',
+      testimonials: 'We will teach you:',
+      testimonials1: '“ We are a team of professionals ready to help you expldaore the world of IT and master the in-demand skills that will transform your career. Our courses are not just theory, but a practical immersion in real projects that you can apply in your work. ”',
+      footer: 'Made in ',
+      footer1: 'All rights reversed.',
+    },
+    ru: {
+      title: 'На наших курсах вы получите индивидуальное обучение в передовых областях IT-индустрии',
+      features: 'Откройте для себя новые возможности',
+      features1: 'IT — это мир, где ваши идеи превращаются в технологии, которые формируют будущее. Присоединяйтесь к нам и создайте что-то, что изменит не только вашу жизнь, но и жизнь миллионов людей.',
+      features2: 'Мощный набор инструментов',
+      features3: 'С нами вы научитесь работать с: контейнеризацией Docker и Kubernetes, облачными хранилищами, такими как AWS, системами контроля версий, например, GIT, и многими другими важными инструментами.',
+      features4: 'Защита от кибератак',
+      features5: 'Кибербезопасность — это практика защиты систем, сетей и программ от цифровых атак. Эти атаки обычно направлены на доступ, изменение или уничтожение конфиденциальной информации.',
+      features6: 'Создание автономных веб-сайтов',
+      features7: 'Создайте свой полноценный проект на React.',
+      features8: 'Построение экосистемы Simple',
+      features9: 'Выведите сотрудничество на новый уровень с функциями безопасности и администрирования, созданными для команд.',
+      fblocks: 'Как работает Simple',
+      fblocks1: 'Simple упрощает ваши процессы, предлагая удобные инструменты и функции, разработанные для улучшения сотрудничества, продуктивности и эффективности.',
+      fblocks2: 'Первичный контакт',
+      fblocks3: 'Ознакомительная сессия',
+      fblocks4: 'Заключение контракта',
+      fblocks5: 'Быстрое прототипирование',
+      fblocks6: 'Этап проектирования',
+      fblocks7: 'Разработка и запуск',
+      testimonials: 'Мы научим вас:',
+      testimonials1: '“ Мы — команда профессионалов, готовых помочь вам изучить мир IT и освоить востребованные навыки, которые преобразят вашу карьеру. Наши курсы — это не просто теория, а практическое погружение в реальные проекты, которые вы сможете применять в своей работе.”',
+      footer: 'Сделано в ',
+      footer1: 'Все права защищены. '
+    }
+  };
+
+export default translations;

@@ -6,18 +6,11 @@ import FeaturesHome from '../partials/Features';
 import FeaturesBlocks from '../partials/FeaturesBlocks';
 import Testimonials from '../partials/Testimonials';
 import Footer from '../partials/Footer';
+import translations from '../language-config/translations';
 
 function Home() {
   const { language } = useContext(LanguageContext); 
 
-  const translations = {
-    en: {
-      title: 'Welcome to our site',
-    },
-    ru: {
-      title: 'Добро пожаловать на наш сайт',
-    }
-  };
 
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">

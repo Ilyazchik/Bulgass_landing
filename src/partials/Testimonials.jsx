@@ -1,34 +1,218 @@
-import {useState} from 'react';
+import {useState, useContext} from 'react';
+import translations from '../language-config/translations';
+import { LanguageContext } from '../language-config/LanguageContext';
 import bulgassIcon from '../assets/bulgass.png';
 
 
 
 const icons = [
-  { id: 1, name: 'HTML5', className: 'fab fa-html5', color: 'text-orange-500', description: 'HTML5 allows you to create modern, semantic, and cross-platform content.' },
-  { id: 2, name: 'CSS3', className: 'fab fa-css3-alt', color: 'text-blue-500', description: 'CSS3 provides powerful tools for creating attractive user interfaces.' },
-  { id: 3, name: 'JavaScript', className: 'fab fa-js-square', color: 'text-yellow-500', description: 'JavaScript is the key language for creating interactive and dynamic web pages.' },
-  { id: 4, name: 'React', className: 'fab fa-react', color: 'text-blue-600', description: 'React is a powerful tool for building responsive and scalable user interfaces.' },
-  { id: 5, name: 'Node.js', className: 'fab fa-node', color: 'text-green-600', description: 'Node.js allows you to develop server applications using JavaScript.' },
-  { id: 6, name: 'Git', className: 'fab fa-git-square', color: 'text-red-600', description: 'Git is an indispensable tool for version control in team development.' },
-  { id: 7, name: 'Docker', className: 'fab fa-docker', color: 'text-orange-600', description: 'Docker helps create containerized applications, simplifying deployment and scaling.' },
-  { id: 8, name: 'Cybersecurity', className: 'fas fa-shield-alt', color: 'text-indigo-600', description: 'Cybersecurity basics will help you protect your applications and data.' },
-  { id: 9, name: 'Python', className: 'fab fa-python', color: 'text-green-600', description: 'Python is a versatile language, ideal for data analysis, development, and automation.' },
-  { id: 10, name: 'Linux', className: 'fab fa-linux', color: 'text-black', description: 'Linux is the foundation for servers, clouds, and embedded systems.' },
-  { id: 11, name: 'C++', className: 'devicon-cplusplus-plain ', color: 'text-blue-600', description: 'C++ is used to create high-performance applications.' },
-  { id: 12, name: 'PHP', className: 'fab fa-php', color: 'text-blue-500', description: 'PHP is one of the most popular languages for developing server-side logic of websites.' },
-  { id: 13, name: 'Bootstrap', className: 'fab fa-bootstrap', color: 'text-purple-600', description: 'Bootstrap speeds up the creation of responsive web designs.' },
-  { id: 14, name: 'Laravel', className: 'fab fa-laravel', color: 'text-green-500', description: 'Laravel is a powerful PHP framework for developing modern applications.' },
-  { id: 15, name: 'VSCode', className: 'devicon-vscode-plain', color: 'text-blue-500', description: 'Visual Studio Code is a popular code editor with powerful extensions for web development.' },
-  { id: 16, name: 'AWS', className: 'fab fa-aws', color: 'text-orange-500', description: 'Amazon Web Services (AWS) is the world’s most widely used cloud, offering over 200 fully featured services for data centers worldwide.' },
-  { id: 17, name: 'DBMS', className: 'fas fa-database', color: 'text-black', description: 'Databases based on relational model of data.' },
-  { id: 18, name: 'D&A', className: 'fas fa-sitemap', color: 'text-green-900', description: 'Data Structures is about how data can be stored in different structures. Algorithms is about how to solve different problems, often by searching through and manipulating data structures.' },
-  { id: 19, name: 'Terraform', className: 'devicon-terraform-plain', color: 'text-purple-600', description: 'Terraform is an IAC tool, used primarily by DevOps teams to automate various infrastructure tasks.' },
-  { id: 20, name: 'Kubernetes', className: 'devicon-kubernetes-plain', color: 'text-blue-600', description: 'Kubernetes is a portable, extensible, open source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation.' },
+  { 
+    id: 1, 
+    name: 'HTML5', 
+    className: 'fab fa-html5', 
+    color: 'text-orange-500', 
+    description: {
+      en: 'HTML5 allows you to create modern, semantic, and cross-platform content.',
+      ru: 'HTML5 позволяет создавать современный, семантический и кроссплатформенный контент.',
+    },
+  },
+  { 
+    id: 2, 
+    name: 'CSS3', 
+    className: 'fab fa-css3-alt', 
+    color: 'text-blue-500', 
+    description: {
+      en: 'CSS3 provides powerful tools for creating attractive user interfaces.',
+      ru: 'CSS3 предоставляет мощные инструменты для создания привлекательных пользовательских интерфейсов.',
+    },
+  },
+  { 
+    id: 3, 
+    name: 'JavaScript', 
+    className: 'fab fa-js-square', 
+    color: 'text-yellow-500', 
+    description: {
+      en: 'JavaScript is the key language for creating interactive and dynamic web pages.',
+      ru: 'JavaScript — ключевой язык для создания интерактивных и динамичных веб-страниц.',
+    },
+  },
+  { 
+    id: 4, 
+    name: 'React', 
+    className: 'fab fa-react', 
+    color: 'text-blue-600', 
+    description: {
+      en: 'React is a powerful tool for building responsive and scalable user interfaces.',
+      ru: 'React — мощный инструмент для создания отзывчивых и масштабируемых пользовательских интерфейсов.',
+    },
+  },
+  { 
+    id: 5, 
+    name: 'Node.js', 
+    className: 'fab fa-node', 
+    color: 'text-green-600', 
+    description: {
+      en: 'Node.js allows you to develop server applications using JavaScript.',
+      ru: 'Node.js позволяет разрабатывать серверные приложения на JavaScript.',
+    },
+  },
+  { 
+    id: 6, 
+    name: 'Git', 
+    className: 'fab fa-git-square', 
+    color: 'text-red-600', 
+    description: {
+      en: 'Git is an indispensable tool for version control in team development.',
+      ru: 'Git — незаменимый инструмент для контроля версий в командной разработке.',
+    },
+  },
+  { 
+    id: 7, 
+    name: 'Docker', 
+    className: 'fab fa-docker', 
+    color: 'text-orange-600', 
+    description: {
+      en: 'Docker helps create containerized applications, simplifying deployment and scaling.',
+      ru: 'Docker помогает создавать контейнеризированные приложения, упрощая их развёртывание и масштабирование.',
+    },
+  },
+  { 
+    id: 8, 
+    name: 'Cybersecurity', 
+    className: 'fas fa-shield-alt', 
+    color: 'text-indigo-600', 
+    description: {
+      en: 'Cybersecurity basics will help you protect your applications and data.',
+      ru: 'Основы кибербезопасности помогут защитить ваши приложения и данные.',
+    },
+  },
+  { 
+    id: 9, 
+    name: 'Python', 
+    className: 'fab fa-python', 
+    color: 'text-green-600', 
+    description: {
+      en: 'Python is a versatile language, ideal for data analysis, development, and automation.',
+      ru: 'Python — универсальный язык, идеально подходящий для анализа данных, разработки и автоматизации.',
+    },
+  },
+  { 
+    id: 10, 
+    name: 'Linux', 
+    className: 'fab fa-linux', 
+    color: 'text-black', 
+    description: {
+      en: 'Linux is the foundation for servers, clouds, and embedded systems.',
+      ru: 'Linux является основой для серверов, облаков и встроенных систем.',
+    },
+  },
+  { 
+    id: 11, 
+    name: 'C++', 
+    className: 'devicon-cplusplus-plain', 
+    color: 'text-blue-600', 
+    description: {
+      en: 'C++ is used to create high-performance applications.',
+      ru: 'C++ используется для создания высокопроизводительных приложений.',
+    },
+  },
+  { 
+    id: 12, 
+    name: 'PHP', 
+    className: 'fab fa-php', 
+    color: 'text-blue-500', 
+    description: {
+      en: 'PHP is one of the most popular languages for developing server-side logic of websites.',
+      ru: 'PHP — один из самых популярных языков для разработки серверной логики веб-сайтов.',
+    },
+  },
+  { 
+    id: 13, 
+    name: 'Bootstrap', 
+    className: 'fab fa-bootstrap', 
+    color: 'text-purple-600', 
+    description: {
+      en: 'Bootstrap speeds up the creation of responsive web designs.',
+      ru: 'Bootstrap ускоряет создание адаптивных веб-дизайнов.',
+    },
+  },
+  { 
+    id: 14, 
+    name: 'Laravel', 
+    className: 'fab fa-laravel', 
+    color: 'text-green-500', 
+    description: {
+      en: 'Laravel is a powerful PHP framework for developing modern applications.',
+      ru: 'Laravel — мощный PHP-фреймворк для разработки современных приложений.',
+    },
+  },
+  { 
+    id: 15, 
+    name: 'VSCode', 
+    className: 'devicon-vscode-plain', 
+    color: 'text-blue-500', 
+    description: {
+      en: 'Visual Studio Code is a popular code editor with powerful extensions for web development.',
+      ru: 'Visual Studio Code — популярный редактор кода с мощными расширениями для веб-разработки.',
+    },
+  },
+  { 
+    id: 16, 
+    name: 'AWS', 
+    className: 'fab fa-aws', 
+    color: 'text-orange-500', 
+    description: {
+      en: 'Amazon Web Services (AWS) is the world’s most widely used cloud, offering over 200 fully featured services for data centers worldwide.',
+      ru: 'Amazon Web Services (AWS) — самая широко используемая облачная платформа, предлагающая более 200 полнофункциональных сервисов для дата-центров по всему миру.',
+    },
+  },
+  { 
+    id: 17, 
+    name: 'DBMS', 
+    className: 'fas fa-database', 
+    color: 'text-black', 
+    description: {
+      en: 'Databases based on relational model of data.',
+      ru: 'Базы данных, основанные на реляционной модели данных.',
+    },
+  },
+  { 
+    id: 18, 
+    name: 'D&A', 
+    className: 'fas fa-sitemap', 
+    color: 'text-green-900', 
+    description: {
+      en: 'Data Structures is about how data can be stored in different structures. Algorithms is about how to solve different problems, often by searching through and manipulating data structures.',
+      ru: 'Структуры данных описывают способы хранения данных. Алгоритмы решают задачи, часто связанные с обработкой и поиском в этих структурах.',
+    },
+  },
+  { 
+    id: 19, 
+    name: 'Terraform', 
+    className: 'devicon-terraform-plain', 
+    color: 'text-purple-600', 
+    description: {
+      en: 'Terraform is an IAC tool, used primarily by DevOps teams to automate various infrastructure tasks.',
+      ru: 'Terraform — инструмент IAC, используемый командами DevOps для автоматизации задач инфраструктуры.',
+    },
+  },
+  { 
+    id: 20, 
+    name: 'Kubernetes', 
+    className: 'devicon-kubernetes-plain', 
+    color: 'text-blue-600', 
+    description: {
+      en: 'Kubernetes is a portable, extensible, open source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation.',
+      ru: 'Kubernetes — это переносимая, расширяемая платформа с открытым исходным кодом для управления контейнеризированными рабочими нагрузками и сервисами, поддерживающая декларативную настройку и автоматизацию.',
+    },
+  },
 ];
+
 
 
 function Testimonials() {
   const [activeModal, setActiveModal] = useState(false);
+  const { language } = useContext(LanguageContext);
 
   const openModal = (id) => setActiveModal(id);
   const closeModal = () => setActiveModal(false);
@@ -56,7 +240,7 @@ function Testimonials() {
         <div className="py-12 md:py-20">
 
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h2 className="h2 mb-4">We will teach you:</h2>
+            <h2 className="h2 mb-4">{translations[language].testimonials}</h2>
           </div>
 
           
@@ -87,7 +271,7 @@ function Testimonials() {
                   onClick={(e) => e.stopPropagation()}
                 >
                   <h3 className="text-xl font-bold mb-4">{icon.name}</h3>
-                  <p className="text-gray-600 mb-6">{icon.description}</p>
+                  <p className="text-gray-600 mb-6">{icon.description[language]}</p>
                   <button
                     className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
                     onClick={closeModal}
@@ -107,7 +291,7 @@ function Testimonials() {
                   <img className="relative rounded-full" src={bulgassIcon} width="96" height="96" alt="Testimonial" />
                 </div>
                 <blockquote className="text-xl font-medium mb-4">
-                  “ We are a team of professionals ready to help you explore the world of IT and master the in-demand skills that will transform your career. Our courses are not just theory, but a practical immersion in real projects that you can apply in your work. ”
+                  {translations[language].testimonials1}
                 </blockquote>
                 <cite className="block font-bold text-lg not-italic mb-1">Bulgass IT Academy</cite>
               </div>

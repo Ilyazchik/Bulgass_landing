@@ -1,8 +1,10 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext} from 'react';
 import { Link } from 'react-router-dom';
 import bulgass from '../assets/bulgass_black.png';
+import { LanguageContext } from "../language-config/LanguageContext";
 
 function Header() {
+  const { language, toggleLanguage } = useContext(LanguageContext);
 
   const [top, setTop] = useState(true);
 
@@ -25,6 +27,9 @@ function Header() {
             <img src={bulgass} alt="bilgassIcon"  width="50"/>
             </Link>
           </div>
+          <button onClick={toggleLanguage}>
+            {language === "en" ? "RU" : "EN"}
+        </button>
 
         </div>
       </div>

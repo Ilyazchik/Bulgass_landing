@@ -1,6 +1,9 @@
-
+import { useContext } from 'react';
+import translations from '../language-config/translations';
+import { LanguageContext } from '../language-config/LanguageContext';
 
 function Footer() {
+  const { language } = useContext(LanguageContext);
   return (
     <footer className="flex justify-center items-center bottom-0 left-0 right-0 bg-white py-4">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 w-full flex justify-between items-center">
@@ -35,7 +38,7 @@ function Footer() {
 
         {/* Copyrights note */}
         <div className="text-sm text-gray-600">
-          Made in <a className="text-blue-600 hover:underline" href="/">Bulgass</a>. All rights reserved.
+          {translations[language].footer} <a className="text-blue-600 hover:underline" href="/">Bulgass</a>. {translations[language].footer1}
         </div>
       </div>
     </footer>
