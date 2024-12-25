@@ -4,6 +4,8 @@ import { LanguageContext } from '../language-config/LanguageContext';
 import Transition from '../utils/Transition';
 import features from '../assets/featuresBg.png';
 import featuresEl from '../assets/features-element.png';
+import cybersecurity from '../assets/cybersecurity.jpeg';
+import react from '../assets/react.png';
 
 
 function Features() {
@@ -111,9 +113,8 @@ function Features() {
                   leaveStart="opacity-100 translate-y-0"
                   leaveEnd="opacity-0 -translate-y-16"
                 >
-                  <div className="relative inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded" src={features} width="500" height="462" alt="Features bg" />
-                    <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={featuresEl} width="500" height="44" alt="Element" style={{ top: '30%' }} />
+                  <div className="relative ">
+                    <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={cybersecurity} width="500" height="44" alt="Element" style={{ top: '30%' }} />
                   </div>
                 </Transition>
                 {/* Item 2 */}
@@ -128,9 +129,8 @@ function Features() {
                   leaveStart="opacity-100 translate-y-0"
                   leaveEnd="opacity-0 -translate-y-16"
                 >
-                  <div className="relative inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded" src={features} width="500" height="462" alt="Features bg" />
-                    <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={featuresEl} width="500" height="44" alt="Element" style={{ top: '30%' }} />
+                  <div className="relative ">
+                    <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={react} width="500" height="44" alt="Element" style={{ top: '30%' }} />
                   </div>
                 </Transition>
                 {/* Item 3 */}
