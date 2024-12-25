@@ -1,7 +1,7 @@
 import {useState, useContext} from 'react';
 import translations from '../language-config/translations';
 import { LanguageContext } from '../language-config/LanguageContext';
-import bulgassIcon from '../assets/bulgass.png';
+import bulgassIcon from '../assets/bulgassNew.png';
 
 
 
@@ -288,7 +288,7 @@ function Testimonials() {
 
               <div className="text-center px-12 py-8 pt-20 mx-4 md:mx-0">
                 <div className="absolute top-0 -mt-8 left-1/2 transform -translate-x-1/2">
-                  <img className="relative rounded-full" src={bulgassIcon} width="96" height="96" alt="Testimonial" />
+                  <img className="relative rounded-full" src={bulgassIcon} width="110" height="110" alt="Testimonial" />
                 </div>
                 <blockquote className="text-xl font-medium mb-4">
                   {translations[language].testimonials1}
