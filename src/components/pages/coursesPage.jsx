@@ -33,36 +33,36 @@ const CoursesPage = () => {
     },
     {
       title: 'BS-70',
-      description: 'Создавайте enterprise приложения на Java',
-      fullDescription: 'Углубленное изучение Java для разработки корпоративных приложений.',
-      duration: '6 месяцев',
+      description: 'Web development',
+      fullDescription: 'Создавайте веб-приложения с использованием современных технологий.',
+      duration: '6-9 месяцев',
       level: 'Продвинутый',
       image: BS70,
       tag: 'Бестселлер'
     },
     {
       title: 'BS-80',
-      description: 'Создавайте enterprise приложения на Java',
-      fullDescription: 'Мастер-класс по Java Enterprise разработке с использованием современных фреймворков.',
-      duration: '6 месяцев',
+      description: 'Algorithmic & Data Structures',
+      fullDescription: 'Изучите алгоритмы и структуры данных, которые лежат в основе современных программ.',
+      duration: '9-12 месяцев',
       level: 'Продвинутый',
       image: BS80,
       tag: 'Топ продаж'
     },
     {
       title: 'BS-90',
-      description: 'Создавайте enterprise приложения на Java',
-      fullDescription: 'Экспертный уровень Java разработки с углублением в микросервисы и облачные технологии.',
-      duration: '8 месяцев',
+      description: 'AI & Machine Learning',
+      fullDescription: 'Изучите основы машинного обучения и нейронных сетей.',
+      duration: '12-18 месяцев',
       level: 'Эксперт',
       image: BS90,
       tag: 'Продвинутый'
     },
     {
       title: 'BS-100',
-      description: 'Создавайте enterprise приложения на Java',
-      fullDescription: 'Специализированный курс по архитектуре корпоративных приложений на Java.',
-      duration: '8 месяцев',
+      description: 'Cybersecurity',
+      fullDescription: 'Изучите основы информационной безопасности и защиты данных.',
+      duration: '12-18 месяцев',
       level: 'Эксперт',
       image: BS100,
       tag: 'Премиум'
