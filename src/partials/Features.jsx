@@ -1,12 +1,15 @@
-import { useState, useRef, useEffect } from 'react';
-
+import { useState, useRef, useEffect, useContext } from 'react';
+import translations from '../language-config/translations';
+import { LanguageContext } from '../language-config/LanguageContext';
 import Transition from '../utils/Transition';
 import features from '../assets/featuresBg.png';
 import featuresEl from '../assets/features-element.png';
+import cybersecurity from '../assets/cybersecurity.jpeg';
+import react from '../assets/react.png';
 
 
 function Features() {
-
+  const { language } = useContext(LanguageContext);
   const [tab, setTab] = useState(1);
 
   const tabs = useRef(false);
@@ -34,16 +37,16 @@ function Features() {
 
 
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">Explore new opportunities</h1>
-            <p className="text-xl text-gray-600">IT is a world where your ideas turn into technologies that shape the future. Join us and create something that will not only change your life but the lives of millions.</p>
+            <h1 className="h2 mb-4"> {translations[language].features}</h1>
+            <p className="text-xl text-gray-600">{translations[language].features1}</p>
           </div>
 
           <div className="md:grid md:grid-cols-12 md:gap-6">
 
             <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
-                <h3 className="h3 mb-3">Powerful suite of tools</h3>
-                <p className="text-xl text-gray-600">With us, you will learn to work with: Docker containerization and with Kubernetes, cloud storage with AWS, version control systems like GIT, and many other essential tools.</p>
+                <h3 className="h3 mb-3">{translations[language].features2}</h3>
+                <p className="text-xl text-gray-600">{translations[language].features3}</p>
               </div>
 
               <div className="mb-8 md:mb-0">
@@ -53,8 +56,8 @@ function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(1); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Protection against cyberattacks</div>
-                    <div className="text-gray-600">Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. These cyberattacks are usually aimed at accessing, changing, or destroying sensitive information.</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">{translations[language].features4}</div>
+                    <div className="text-gray-600">{translations[language].features5}</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -68,8 +71,8 @@ function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(2); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Creation of standalone websites</div>
-                    <div className="text-gray-600">Create your full-scale project in React </div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">{translations[language].features6}</div>
+                    <div className="text-gray-600">{translations[language].features7} </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -83,8 +86,8 @@ function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(3); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Building the Simple ecosystem</div>
-                    <div className="text-gray-600">Take collaboration to the next level with security and administrative features built for teams.</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">{translations[language].features8}</div>
+                    <div className="text-gray-600">{translations[language].features9}</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -110,9 +113,8 @@ function Features() {
                   leaveStart="opacity-100 translate-y-0"
                   leaveEnd="opacity-0 -translate-y-16"
                 >
-                  <div className="relative inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded" src={features} width="500" height="462" alt="Features bg" />
-                    <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={featuresEl} width="500" height="44" alt="Element" style={{ top: '30%' }} />
+                  <div className="relative ">
+                    <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={cybersecurity} width="500" height="44" alt="Element" style={{ top: '30%' }} />
                   </div>
                 </Transition>
                 {/* Item 2 */}
@@ -127,9 +129,8 @@ function Features() {
                   leaveStart="opacity-100 translate-y-0"
                   leaveEnd="opacity-0 -translate-y-16"
                 >
-                  <div className="relative inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded" src={features} width="500" height="462" alt="Features bg" />
-                    <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={featuresEl} width="500" height="44" alt="Element" style={{ top: '30%' }} />
+                  <div className="relative ">
+                    <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={react} width="500" height="44" alt="Element" style={{ top: '30%' }} />
                   </div>
                 </Transition>
                 {/* Item 3 */}

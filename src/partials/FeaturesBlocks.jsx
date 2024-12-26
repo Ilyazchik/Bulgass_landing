@@ -1,6 +1,10 @@
+import { useContext } from 'react';
+import translations from '../language-config/translations';
+import { LanguageContext } from '../language-config/LanguageContext';
 
 
 function FeaturesBlocks() {
+const { language } = useContext(LanguageContext);
   return (
     <section className="relative">
 
@@ -13,8 +17,8 @@ function FeaturesBlocks() {
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h1 className="h1 mb-4 text-white">How Simple works</h1>
-            <p className="text-xl text-gray-600">Simple streamlines your process by offering easy-to-use tools and features designed to enhance collaboration, productivity, and efficiency. </p>
+            <h1 className="h1 mb-4 text-white">{translations[language].fblocks}</h1>
+            <p className="text-xl text-gray-600">{translations[language].fblocks1}</p>
           </div>
 
           {/* Items */}
@@ -33,7 +37,7 @@ function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Initial Contact</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">{translations[language].fblocks2}</h4>
               <p className="text-gray-600 text-center"></p>
             </div>
 
@@ -49,7 +53,7 @@ function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Discovery Session</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">{translations[language].fblocks3}</h4>
               <p className="text-gray-600 text-center"></p>
             </div>
 
@@ -64,7 +68,7 @@ function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Contracting</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">{translations[language].fblocks4}</h4>
               <p className="text-gray-600 text-center"></p>
             </div>
 
@@ -81,7 +85,7 @@ function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>              
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Fast Prototyping</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">{translations[language].fblocks5}</h4>
               <p className="text-gray-600 text-center"></p>
             </div>
 
@@ -96,7 +100,7 @@ function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Design Phase</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">{translations[language].fblocks6}</h4>
               <p className="text-gray-600 text-center"></p>
             </div>
 
@@ -113,7 +117,7 @@ function FeaturesBlocks() {
                   </g>
                 </g>
               </svg>
-              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">Develop & Launch</h4>
+              <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">{translations[language].fblocks7}</h4>
               <p className="text-gray-600 text-center"></p>
             </div>
 

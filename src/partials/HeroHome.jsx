@@ -1,6 +1,10 @@
+import { useContext } from 'react';
 import heroImage from '../assets/hero-image.png';
-function HeroHome() {
+import translations from '../language-config/translations';
+import { LanguageContext } from '../language-config/LanguageContext';
 
+function HeroHome() {
+  const { language } = useContext(LanguageContext);
 
   return (
     <section className="relative">
@@ -31,7 +35,7 @@ function HeroHome() {
           <div className="text-center pb-12 md:pb-16">
             <h1 className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4" data-aos="zoom-y-out">Bulgass IT Academy </h1>
             <div className="max-w-3xl mx-auto">
-              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">In our courses, you will receive personalized training in cutting-edge areas of the IT industry.</p>
+              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">{translations[language].title}</p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
               </div>
             </div>

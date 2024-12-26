@@ -4,7 +4,7 @@ import AOS from 'aos';
 import { focusHandling } from 'cruip-js-toolkit';
 import Home from './components/homePage';
 import { LanguageProvider } from './language-config/LanguageContext';
-import LanguageSwitcher from './language-config/LanguageSwitcher';
+
 
 
 function App() {
@@ -28,11 +28,9 @@ function App() {
 
   return (
     <LanguageProvider>
-      <LanguageSwitcher />
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>
-      <LanguageSwitcher />
     </LanguageProvider>
   );
 }
