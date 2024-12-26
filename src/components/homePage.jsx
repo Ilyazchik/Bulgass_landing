@@ -11,14 +11,6 @@ import translations from '../language-config/translations';
 function Home() {
   const { language } = useContext(LanguageContext); 
 
-  const translations = {
-    en: {
-      title: 'Bulgass IT Academy',
-    },
-    ru: {
-      title: 'Булгасс IT Академия',
-    }
-  };
 
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
@@ -37,3 +29,4 @@ function Home() {
 }
 
 export default Home;
+

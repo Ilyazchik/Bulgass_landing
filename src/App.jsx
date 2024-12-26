@@ -4,6 +4,7 @@ import AOS from 'aos';
 import { focusHandling } from 'cruip-js-toolkit';
 import Home from './components/homePage';
 import { LanguageProvider } from './language-config/LanguageContext';
+import CoursesPage from './components/pages/coursesPage';
 
 
 
@@ -30,6 +31,7 @@ function App() {
     <LanguageProvider>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/courses" element={<CoursesPage />} />
       </Routes>
     </LanguageProvider>
   );
