@@ -12,10 +12,10 @@ function Home() {
 
   const translations = {
     en: {
-      title: 'Welcome to our site',
+      title: 'Bulgass IT Academy',
     },
     ru: {
-      title: 'Добро пожаловать на наш сайт',
+      title: 'Булгасс IT Академия',
     }
   };
 
