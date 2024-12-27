@@ -1,9 +1,14 @@
 import { useContext } from 'react';
-import translations from '../language-config/translations';
 import { LanguageContext } from '../language-config/LanguageContext';
 
 function Footer() {
   const { language } = useContext(LanguageContext);
+  const translations = {
+    en:{footer: 'Made in ',
+    footer1: 'All rights reversed.',},
+    ru:{footer: 'Сделано в ',
+    footer1: 'Все права защищены.',},
+  }
   return (
     <footer className="flex justify-center items-center bottom-0 left-0 right-0 bg-white py-4">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 w-full flex justify-between items-center">

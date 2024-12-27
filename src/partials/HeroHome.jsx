@@ -1,10 +1,13 @@
 import { useContext } from 'react';
 import heroImage from '../assets/hero-image.png';
-import translations from '../language-config/translations';
 import { LanguageContext } from '../language-config/LanguageContext';
 
 function HeroHome() {
   const { language } = useContext(LanguageContext);
+  const translations = {
+    en:{title: 'In our courses, you will receive personalized training in cutting-edge areas of the IT industry',},
+    ru:{title: 'На наших курсах вы получите индивидуальное обучение в передовых областях IT-индустрии',},
+  }
 
   return (
     <section className="relative">

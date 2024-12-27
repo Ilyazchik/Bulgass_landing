@@ -1,5 +1,4 @@
 import { useState, useRef, useEffect, useContext } from 'react';
-import translations from '../language-config/translations';
 import { LanguageContext } from '../language-config/LanguageContext';
 import Transition from '../utils/Transition';
 import features from '../assets/featuresBg.png';
@@ -13,7 +12,30 @@ function Features() {
   const [tab, setTab] = useState(1);
 
   const tabs = useRef(false);
-
+  const translations = {
+    en:{      
+      features: 'Explore new opportunities',
+      features1: 'IT is a world where your ideas turn into technologies that shape the future. Join us and create something that will not only change your life but the lives of millions.',
+      features2: 'Powerful suite of tools',
+      features3: 'With us, you will learn to work with: Docker containerization and with Kubernetes, cloud storage with AWS, version control systems like GIT, and many other essential tools.',
+      features4: 'Protection against cyberattacks',
+      features5: 'Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. These cyberattacks are usually aimed at accessing, changing, or destroying sensitive information.',
+      features6: 'Creation of standalone websites',
+      features7: 'Create your full-scale project in React.',
+      features8: 'Building the Simple ecosystem',
+      features9: 'Take collaboration to the next level with security and administrative features built for teams.',},
+    ru:{
+      features: 'Откройте для себя новые возможности',
+      features1: 'IT — это мир, где ваши идеи превращаются в технологии, которые формируют будущее. Присоединяйтесь к нам и создайте что-то, что изменит не только вашу жизнь, но и жизнь миллионов людей.',
+      features2: 'Мощный набор инструментов',
+      features3: 'С нами вы научитесь работать с: контейнеризацией Docker и Kubernetes, облачными хранилищами, такими как AWS, системами контроля версий, например, GIT, и многими другими важными инструментами.',
+      features4: 'Защита от кибератак',
+      features5: 'Кибербезопасность — это практика защиты систем, сетей и программ от цифровых атак. Эти атаки обычно направлены на доступ, изменение или уничтожение конфиденциальной информации.',
+      features6: 'Создание автономных веб-сайтов',
+      features7: 'Создайте свой полноценный проект на React.',
+      features8: 'Построение экосистемы Simple',
+      features9: 'Выведите сотрудничество на новый уровень с функциями безопасности и администрирования, созданными для команд.',},
+  }
   
   useEffect(() => {
     const heightFix = () => {
@@ -114,7 +136,7 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative ">
-                    <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={cybersecurity} width="500" height="44" alt="Element" style={{ top: '30%' }} />
+                    <img className='w-full' src={cybersecurity} width="500" height="44" alt="Element" style={{ top: '30%' }} />
                   </div>
                 </Transition>
                 {/* Item 2 */}
@@ -130,7 +152,7 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative ">
-                    <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={react} width="500" height="44" alt="Element" style={{ top: '30%' }} />
+                    <img className='w-full' src={react} width="500" height="44" alt="Element" style={{ top: '30%' }} />
                   </div>
                 </Transition>
                 {/* Item 3 */}

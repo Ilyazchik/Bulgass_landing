@@ -1,10 +1,29 @@
 import { useContext } from 'react';
-import translations from '../language-config/translations';
 import { LanguageContext } from '../language-config/LanguageContext';
 
 
 function FeaturesBlocks() {
 const { language } = useContext(LanguageContext);
+const translations = {
+  en:{
+  fblocks: 'How Simple works',
+  fblocks1: 'Simple streamlines your process by offering easy-to-use tools and features designed to enhance collaboration, productivity, and efficiency.',
+  fblocks2: 'Initial Contact',
+  fblocks3: 'Discovery Session',
+  fblocks4: 'Contracting',
+  fblocks5: 'Fast Prototyping',
+  fblocks6: 'Design Phase',
+  fblocks7: 'Develop & Launch',},
+  ru:{
+  fblocks: 'Как работает Simple',
+  fblocks1: 'Simple упрощает ваши процессы, предлагая удобные инструменты и функции, разработанные для улучшения сотрудничества, продуктивности и эффективности.',
+  fblocks2: 'Первичный контакт',
+  fblocks3: 'Ознакомительная сессия',
+  fblocks4: 'Заключение контракта',
+  fblocks5: 'Быстрое прототипирование',
+  fblocks6: 'Этап проектирования',
+  fblocks7: 'Разработка и запуск',},
+}
   return (
     <section className="relative">
 

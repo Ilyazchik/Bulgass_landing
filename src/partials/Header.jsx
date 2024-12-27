@@ -7,6 +7,12 @@ function Header() {
   const { language, toggleLanguage } = useContext(LanguageContext);
 
   const [top, setTop] = useState(true);
+  const translations = {
+    en:{courses: 'Courses',
+    discont: 'Discounts',},
+    ru:{courses: 'Курсы',
+    discont: 'Скидки',},
+  }
 
   useEffect(() => {
     const scrollHandler = () => {
@@ -31,11 +37,11 @@ function Header() {
               {language === "en" ? "RU" : "EN"}
             </button>
             <Link to="/courses" className="block" aria-label="Cruip">
-              <button>Курсы</button>
+              <button>{translations[language].courses}</button>
             </Link>
 
             <Link to="/discont" className="block" aria-label="Cruip">
-              <button>Скидки</button>
+              <button>{translations[language].discont}</button>
             </Link>
           </div>
         </div>

@@ -1,5 +1,4 @@
 import {useState, useContext} from 'react';
-import translations from '../language-config/translations';
 import { LanguageContext } from '../language-config/LanguageContext';
 import bulgassIcon from '../assets/bulgassNew.png';
 
@@ -216,6 +215,13 @@ function Testimonials() {
 
   const openModal = (id) => setActiveModal(id);
   const closeModal = () => setActiveModal(false);
+
+  const translations = {
+    en:{testimonials: 'We will teach you:',
+    testimonials1: '“ We are a team of professionals ready to help you expldaore the world of IT and master the in-demand skills that will transform your career. Our courses are not just theory, but a practical immersion in real projects that you can apply in your work. ”',},
+    ru:{testimonials: 'Мы научим вас:',
+    testimonials1: '“ Мы — команда профессионалов, готовых помочь вам изучить мир IT и освоить востребованные навыки, которые преобразят вашу карьеру. Наши курсы — это не просто теория, а практическое погружение в реальные проекты, которые вы сможете применять в своей работе.”',},
+  }
 
   return (
     <section className="relative">

@@ -1,4 +1,5 @@
 import { createContext, useState } from 'react'; 
+import PropTypes from 'prop-types';
 
 export const LanguageContext = createContext();
 
@@ -12,6 +13,10 @@ export function LanguageProvider({ children }) {
   return (
     <LanguageContext.Provider value={{ language, toggleLanguage }}>
       {children}
-    </LanguageContext.Provider>
+    </LanguageContext.Provider>   
   );
-}  
+}
+
+LanguageProvider.propTypes = {
+  children: PropTypes.node.isRequired
+};  

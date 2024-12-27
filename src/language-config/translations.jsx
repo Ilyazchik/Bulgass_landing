@@ -2,29 +2,16 @@
 
 const translations = {
     en: {
-      title: 'In our courses, you will receive personalized training in cutting-edge areas of the IT industry',
-      features: 'Explore new opportunities',
-      features1: 'IT is a world where your ideas turn into technologies that shape the future. Join us and create something that will not only change your life but the lives of millions.',
-      features2: 'Powerful suite of tools',
-      features3: 'With us, you will learn to work with: Docker containerization and with Kubernetes, cloud storage with AWS, version control systems like GIT, and many other essential tools.',
-      features4: 'Protection against cyberattacks',
-      features5: 'Cybersecurity is the practice of protecting systems, networks, and programs from digital attacks. These cyberattacks are usually aimed at accessing, changing, or destroying sensitive information.',
-      features6: 'Creation of standalone websites',
-      features7: 'Create your full-scale project in React.',
-      features8: 'Building the Simple ecosystem',
-      features9: 'Take collaboration to the next level with security and administrative features built for teams.',
-      fblocks: 'How Simple works',
-      fblocks1: 'Simple streamlines your process by offering easy-to-use tools and features designed to enhance collaboration, productivity, and efficiency.',
-      fblocks2: 'Initial Contact',
-      fblocks3: 'Discovery Session',
-      fblocks4: 'Contracting',
-      fblocks5: 'Fast Prototyping',
-      fblocks6: 'Design Phase',
-      fblocks7: 'Develop & Launch',
       testimonials: 'We will teach you:',
       testimonials1: '“ We are a team of professionals ready to help you expldaore the world of IT and master the in-demand skills that will transform your career. Our courses are not just theory, but a practical immersion in real projects that you can apply in your work. ”',
       footer: 'Made in ',
       footer1: 'All rights reversed.',
+      zoomDescription: 'Zoom is a video conferencing platform that allows you to connect with your team and clients from anywhere in the world. It is a powerful tool for remote collaboration and communication.',
+      discordDescription: 'Discord is a communication platform that allows you to connect with your team and clients from anywhere in the world. It is a powerful tool for remote collaboration and communication.',
+      meetDescription: 'Google Meet is a video conferencing platform that allows you to connect with your team and clients from anywhere in the world. It is a powerful tool for remote collaboration and communication.',
+      newStudentDescription: 'For new students',
+      groupDescription: 'For groups of 3 or more students',
+      longTermDescription: 'For long-term students',
     },
     ru: {
       title: 'На наших курсах вы получите индивидуальное обучение в передовых областях IT-индустрии',
@@ -49,7 +36,14 @@ const translations = {
       testimonials: 'Мы научим вас:',
       testimonials1: '“ Мы — команда профессионалов, готовых помочь вам изучить мир IT и освоить востребованные навыки, которые преобразят вашу карьеру. Наши курсы — это не просто теория, а практическое погружение в реальные проекты, которые вы сможете применять в своей работе.”',
       footer: 'Сделано в ',
-      footer1: 'Все права защищены. '
+      footer1: 'Все права защищены. ',
+      zoomDescription: 'Zoom — это платформа для видеоконференций, которая позволяет вам общаться с командой и клиентами из любой точки мира. Это мощный инструмент для удаленного сотрудничества и общения.',
+      discordDescription: 'Discord — это платформа для общения, которая позволяет вам общаться с командой и клиентами из любой точки мира. Это мощный инструмент для удаленного сотрудничества и общения.',
+      meetDescription: 'Google Meet — это платформа для видеоконференций, которая позволяет вам общаться с командой и клиентами из любой точки мира. Это мощный инструмент для удаленного сотрудничества и общения.',
+      newStudentDescription: 'Для новых студентов',
+      groupDescription: 'Для групп из 3 и более студентов',
+      longTermDescription: 'Для долгосрочных студентов',      
+      
     }
   };
 
