@@ -12,7 +12,7 @@ function StudentBenefits() {
       meetDescription: 'Google Meet is a video conferencing platform that allows you to connect with your team and clients from anywhere in the world. It is a powerful tool for remote collaboration and communication.',
       newStudentDescription: 'For new students',
       groupDescription: 'For groups of 3 or more students',
-      longTermDescription: 'Для долгосрочных студентов',
+      longTermDescription: 'For long term students',
     },
     ru:{
       zoomDescription: 'Zoom — это платформа для видеоконференций, которая позволяет вам общаться с командой и клиентами из любой точки мира. Это мощный инструмент для удаленного сотрудничества и общения.',
