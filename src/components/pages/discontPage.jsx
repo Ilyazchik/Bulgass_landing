@@ -27,17 +27,17 @@ function StudentBenefits() {
   const platforms = [
     {
       name: 'Zoom',
-      icon: 'fa-video',
+      icon: 'fas fa-video',
       description: translations[language].zoomDescription
     },
     {
       name: 'Discord',
-      icon: 'fa-discord',
+      icon: 'fab fa-discord',
       description: translations[language].discordDescription
     },
     {
       name: 'Google Meet',
-      icon: 'fa-google',
+      icon: ' fab fa-google',
       description: translations[language].meetDescription
     }
   ];
@@ -87,7 +87,7 @@ function StudentBenefits() {
                 className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="text-center">
-                  <i className={`fas ${platform.icon} text-6xl text-blue-600 mb-6`}></i>
+                  <i className={`${platform.icon} text-6xl text-blue-600 mb-6`}></i>
                   <h3 className="text-2xl font-semibold mb-4">{platform.name}</h3>
                   <p className="text-gray-600 text-lg">{platform.description}</p>
                 </div>
