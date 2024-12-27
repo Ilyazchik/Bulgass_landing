@@ -42,14 +42,14 @@ const CoursesPage = () => {
       title: 'BS-50',
       en: {
         description: 'Basics of computer science',
-        fullDescription: 'Learn the fundamentals of computer science, algorithms and data structures. Perfect for beginners.',
+        fullDescription: 'BS-50: Course covers the basics of web development (HTML, CSS, JavaScript), programming in C++ and C#, and cybersecurity basics. Ideal for beginners and those looking to improve their skills in modern technologies.',
         duration: '3 months',
         level: 'Beginner',
         tag: 'Popular'
       },
       ru: {
         description: 'Основы компьютерных наук',
-        fullDescription: 'Изучите основы компьютерных наук, алгоритмы и структуры данных. Идеально подходит для начинающих.',
+        fullDescription: 'BS-50: Курс охватывает основы веб-разработки (HTML, CSS, JavaScript), программирования на C++ и C#, а также основы кибербезопасности. Идеален для новичков и тех, кто хочет улучшить свои навыки в современных технологиях.',
         duration: '3 месяца',
         level: 'Начальный',
         tag: 'Популярный'
@@ -60,14 +60,14 @@ const CoursesPage = () => {
       title: 'BS-60',
       en: {
         description: 'Game development',
-        fullDescription: 'Create your own games, learn game engines and the basics of game design.',
+        fullDescription: 'BS-60: Course covers the basics of game development (Unity, Unreal Engine), programming in C# and C++, and game design. Ideal for beginners and those looking to improve their skills in modern technologies.',
         duration: '4 months',
         level: 'Intermediate',
         tag: 'New'
       },
       ru: {
         description: 'Разработка игр',
-        fullDescription: 'Создавайте свои собственные игры, изучите игровые движки и основы геймдизайна.',
+        fullDescription: 'BS-60: Курс по созданию игр, где студенты освоят игровые движки Unity и Unreal Engine, а также языки программирования C# и C++. Курс включает разработку 2D и 3D игр, проектирование уровней, основы геймдизайна, создание логики, анимации и искусственного интеллекта.',        
         duration: '4 месяца',
         level: 'Средний',
         tag: 'Новый'
@@ -78,14 +78,14 @@ const CoursesPage = () => {
       title: 'BS-70',
       en: {
         description: 'Web development',
-        fullDescription: 'Create web applications using modern technologies.',
+        fullDescription: 'BS-70: Course covers the basics of web development (HTML, CSS, JavaScript), programming in C++ and C#, and cybersecurity basics. Ideal for beginners and those looking to improve their skills in modern technologies.',
         duration: '6-9 months',
         level: 'Advanced',
         tag: 'Bestseller'
       },
       ru: {
         description: 'Веб-разработка',
-        fullDescription: 'Создавайте веб-приложения с использованием современных технологий.',
+        fullDescription: 'BS-70: Курс по созданию веб-приложений научит разрабатывать динамичные сайты с использованием HTML, CSS, JavaScript, React и Git. Студенты освоят основы верстки, добавление интерактивности и создание интерфейсов с React. Курс включает теорию и практическую работу с реальными проектами, развивая навыки командной работы и подготовки веб-приложений для бизнеса.',
         duration: '6-9 месяцев',
         level: 'Продвинутый',
         tag: 'Бестселлер'
@@ -96,14 +96,14 @@ const CoursesPage = () => {
       title: 'BS-80',
       en: {
         description: 'Algorithmic & Data Structures',
-        fullDescription: 'Study algorithms and data structures that form the foundation of modern programs.',
+        fullDescription: 'BS-80: Course covers the basics of algorithmic and data structures (arrays, lists, trees, graphs), and algorithms for processing them. Ideal for beginners and those looking to improve their skills in modern technologies.',
         duration: '9-12 months',
         level: 'Advanced',
         tag: 'Top Seller'
       },
       ru: {
         description: 'Алгоритмы и структуры данных',
-        fullDescription: 'Изучите алгоритмы и структуры данных, которые лежат в основе современных программ.',
+        fullDescription: 'BS-80: Курс по алгоритмам и структурам данных научит основным структурам данных (массивы, списки, деревья, графы) и алгоритмам для их обработки. Вы изучите методы поиска, сортировки и оптимизации, развивая аналитическое мышление. Курс включает практические задания для закрепления теории и подготовки к собеседованиям.',
         duration: '9-12 месяцев',
         level: 'Продвинутый',
         tag: 'Топ продаж'
@@ -114,14 +114,14 @@ const CoursesPage = () => {
       title: 'BS-90',
       en: {
         description: 'AI & Machine Learning',
-        fullDescription: 'Learn the basics of machine learning and neural networks.',
+        fullDescription: 'BS-90: Course covers the basics of AI and machine learning (C++, C#), neural networks, and algorithms for processing them. Ideal for beginners and those looking to improve their skills in modern technologies.',
         duration: '12-18 months',
         level: 'Expert',
         tag: 'Advanced'
       },
       ru: {
         description: 'ИИ и машинное обучение',
-        fullDescription: 'Изучите основы машинного обучения и нейронных сетей.',
+        fullDescription: 'BS-90: Курс по искусственному интеллекту и машинному обучению научит вас разрабатывать модели с использованием C++ и C#. Вы освоите алгоритмы машинного обучения, такие как линейная регрессия, классификация, кластеризация и нейронные сети. Курс включает практические проекты по созданию интеллектуальных систем для различных отраслей.',
         duration: '12-18 месяцев',
         level: 'Эксперт',
         tag: 'Продвинутый'
@@ -132,14 +132,14 @@ const CoursesPage = () => {
       title: 'BS-100',
       en: {
         description: 'Cybersecurity',
-        fullDescription: 'Study the fundamentals of information security and data protection.',
+        fullDescription: 'BS-100: Course covers the basics of cybersecurity (encryption, data protection, hacking, monitoring), and algorithms for processing them. Ideal for beginners and those looking to improve their skills in modern technologies.',
         duration: '12-18 months',
         level: 'Expert',
         tag: 'Premium'
       },
       ru: {
         description: 'Кибербезопасность',
-        fullDescription: 'Изучите основы информационной безопасности и защиты данных.',
+        fullDescription: 'BS-100: Курс по кибербезопасности научит защищать системы и данные от угроз. Вы изучите криптографию, защиту данных, методы взлома и защиты, а также инструменты для мониторинга безопасности. Курс включает практические навыки защиты веб-приложений и серверов, а также создание безопасных архитектур для корпоративных систем.',
         duration: '12-18 месяцев',
         level: 'Эксперт',
         tag: 'Премиум'
