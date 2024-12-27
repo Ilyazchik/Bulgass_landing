@@ -33,6 +33,10 @@ function Header() {
             <Link to="/courses" className="block" aria-label="Cruip">
               <button>Курсы</button>
             </Link>
+
+            <Link to="/discont" className="block" aria-label="Cruip">
+              <button>Скидки</button>
+            </Link>
           </div>
         </div>
       </div>

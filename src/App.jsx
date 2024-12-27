@@ -5,6 +5,7 @@ import { focusHandling } from 'cruip-js-toolkit';
 import Home from './components/homePage';
 import { LanguageProvider } from './language-config/LanguageContext';
 import CoursesPage from './components/pages/coursesPage';
+import DiscontPage from './components/pages/discontPage';
 
 
 
@@ -32,6 +33,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/courses" element={<CoursesPage />} />
+        <Route path="/discont" element={<DiscontPage />} />
       </Routes>
     </LanguageProvider>
   );

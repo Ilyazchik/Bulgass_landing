@@ -192,8 +192,8 @@ const icons = [
     className: 'devicon-terraform-plain', 
     color: 'text-purple-600', 
     description: {
-      en: 'Terraform is an IAC tool, used primarily by DevOps teams to automate various infrastructure tasks.',
-      ru: 'Terraform — инструмент IAC, используемый командами DevOps для автоматизации задач инфраструктуры.',
+      en: 'Terraform is an "IaC" tool, used primarily by DevOps teams to automate various infrastructure tasks.',
+      ru: 'Terraform — инструмент "Инфраструктура как код", используемый командами DevOps для автоматизации задач инфраструктуры.',
     },
   },
   { 
